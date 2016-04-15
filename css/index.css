@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #000004;
-	background-color: #4C1F72;
+	color: #0000EC;
+	background-color: #CA6722;
 }
 
 .js body
@@ -20,7 +20,6 @@
 	border-color: #000000;
 	z-index: 1;
 	padding-bottom: 0px;
-	width: 100%;
 	margin-right: auto;
 	background-image: none;
 	background-color: transparent;
@@ -35,7 +34,6 @@
 
 #u221
 {
-	left: 0px;
 	z-index: 6;
 	position: relative;
 	background-color: transparent;
@@ -46,14 +44,13 @@
 	z-index: 4;
 	position: relative;
 	background-color: transparent;
-	margin-top: 9px;
 }
 
 #u469-4
 {
-	font-size: 48px;
+	font-size: 32px;
 	z-index: 8;
-	line-height: 48px;
+	line-height: 32px;
 	min-height: 53px;
 	font-weight: bold;
 	color: #D13636;
@@ -67,22 +64,9 @@
 	min-height: 53px;
 }
 
-#u221_img,#pu2201
-{
-	width: 100%;
-}
-
-#u2201
-{
-	padding-bottom: 20px;
-	z-index: 3;
-	min-height: 124px;
-}
-
 #u2201_align_to_page
 {
 	margin-right: auto;
-	width: 100%;
 	position: relative;
 	margin-left: auto;
 }
@@ -92,26 +76,12 @@
 	margin-right: -10000px;
 	z-index: 16;
 	position: relative;
-}
-
-#u2324-4
-{
-	z-index: 18;
 	background-color: transparent;
-	font-size: 26px;
-	text-align: center;
-	margin-right: -10000px;
-	line-height: 31px;
-	min-height: 34px;
-	color: #2D2D2D;
-	position: relative;
-	font-weight: bold;
 }
 
-#u2201-bw
+#u2201,#u2201-bw
 {
 	z-index: 3;
-	min-height: 124px;
 }
 
 #u601-4
@@ -127,6 +97,18 @@
 {
 	z-index: 12;
 	min-height: 8px;
+}
+
+#u2324-4
+{
+	z-index: 18;
+	background-color: transparent;
+	font-size: 26px;
+	text-align: center;
+	line-height: 31px;
+	min-height: 34px;
+	color: #2D2D2D;
+	font-weight: bold;
 }
 
 .html
@@ -155,6 +137,7 @@ body
 	#page
 	{
 		min-height: 584.9999999999998px;
+		width: 100%;
 	}
 
 	#u221
@@ -162,11 +145,13 @@ body
 		margin-top: 5px;
 		width: 7.3%;
 		margin-left: 46.36%;
+		left: 0px;
 	}
 
 	#u229
 	{
 		width: 511px;
+		margin-top: 9px;
 		margin-left: 50%;
 		left: -255px;
 	}
@@ -179,12 +164,23 @@ body
 	#pu2201
 	{
 		margin-top: 60px;
+		width: 100%;
+	}
+
+	#u2201
+	{
+		min-height: 124px;
+		padding-bottom: 20px;
+	}
+
+	#u221_img,#u2201_align_to_page
+	{
+		width: 100%;
 	}
 
 	#u2312
 	{
 		width: 178px;
-		background-color: transparent;
 		margin-top: 52px;
 		margin-left: 50%;
 		left: -75px;
@@ -193,8 +189,16 @@ body
 	#u2324-4
 	{
 		width: 178px;
+		position: relative;
+		margin-right: -10000px;
 		margin-top: 71px;
-		left: 46.1%;
+		margin-left: 50%;
+		left: -75px;
+	}
+
+	#u2201-bw
+	{
+		min-height: 124px;
 	}
 
 	#u601-4-bw
@@ -203,7 +207,7 @@ body
 	}
 }
 
-@media (max-width: 1024px)
+@media (min-width: 321px) and (max-width: 1024px)
 {
 	#muse_css_mq
 	{
@@ -218,6 +222,7 @@ body
 	#page
 	{
 		min-height: 787.9999999999998px;
+		width: 100%;
 		max-width: 1024px;
 	}
 
@@ -226,18 +231,15 @@ body
 		margin-top: 10px;
 		width: 11.33%;
 		margin-left: 44.34%;
+		left: 0px;
 	}
 
 	#u229
 	{
+		margin-top: 9px;
 		width: 44.83%;
 		margin-left: 27.59%;
 		left: -1px;
-	}
-
-	#u229_img
-	{
-		width: 100%;
 	}
 
 	#u469-4-bw
@@ -248,32 +250,121 @@ body
 	#pu2201
 	{
 		margin-top: 295px;
+		width: 100%;
+	}
+
+	#u2201
+	{
+		min-height: 124px;
+		padding-bottom: 20px;
+	}
+
+	#u221_img,#u229_img,#u2201_align_to_page
+	{
+		width: 100%;
 	}
 
 	#u2312
 	{
+		width: 173px;
 		margin-top: 54px;
-		width: 16.9%;
-		left: 42.68%;
+		left: 41.51%;
 	}
 
-	#u2312_img
+	#u2201-bw
 	{
-		display: block;
-		vertical-align: top;
-		width: 100%;
-	}
-
-	#u2324-4
-	{
-		margin-top: 72px;
-		width: 14.46%;
-		left: 44.05%;
+		min-height: 124px;
 	}
 
 	#u601-4-bw
 	{
 		margin-top: 23px;
+	}
+
+	#u2324-4-bw
+	{
+		z-index: 18;
+		min-height: 34px;
+		margin-top: 72px;
+	}
+}
+
+@media (max-width: 320px)
+{
+	#muse_css_mq
+	{
+		background-color: #000140;
+	}
+
+	#bp_320.active
+	{
+		display: block;
+	}
+
+	#page
+	{
+		width: 320px;
+		min-height: 512.9999999999999px;
+	}
+
+	#u221
+	{
+		width: 58px;
+		margin-left: 131px;
+		margin-top: 11px;
+	}
+
+	#u229
+	{
+		width: 255px;
+		margin-left: 36px;
+		margin-top: 11px;
+	}
+
+	#u469-4-bw
+	{
+		margin-top: 35px;
+	}
+
+	#pu2201
+	{
+		width: 0.01px;
+		margin-top: 101px;
+	}
+
+	#u2201
+	{
+		min-height: 105px;
+		padding-bottom: 39px;
+	}
+
+	#u2201_align_to_page
+	{
+		width: 320px;
+	}
+
+	#u2312
+	{
+		width: 148px;
+		margin-top: 45px;
+		left: 86px;
+	}
+
+	#u2201-bw
+	{
+		min-height: 105px;
+	}
+
+	#u601-4-bw
+	{
+		margin-top: 23px;
+	}
+
+	#u2324-4-bw
+	{
+		z-index: 18;
+		min-height: 34px;
+		margin-top: 58px;
 	}
 
 	body

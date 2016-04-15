@@ -11,6 +11,7 @@
 	#page
 	{
 		min-height: 584.9999999999998px;
+		width: 100%;
 	}
 
 	#u221
@@ -18,11 +19,13 @@
 		margin-top: 5px;
 		width: 7.3%;
 		margin-left: 46.36%;
+		left: 0px;
 	}
 
 	#u229
 	{
 		width: 511px;
+		margin-top: 9px;
 		margin-left: 50%;
 		left: -255px;
 	}
@@ -35,12 +38,23 @@
 	#pu2201
 	{
 		margin-top: 60px;
+		width: 100%;
+	}
+
+	#u2201
+	{
+		min-height: 124px;
+		padding-bottom: 20px;
+	}
+
+	#u221_img,#u2201_align_to_page
+	{
+		width: 100%;
 	}
 
 	#u2312
 	{
 		width: 178px;
-		background-color: transparent;
 		margin-top: 52px;
 		margin-left: 50%;
 		left: -75px;
@@ -49,8 +63,16 @@
 	#u2324-4
 	{
 		width: 178px;
+		position: relative;
+		margin-right: -10000px;
 		margin-top: 71px;
-		left: 46.1%;
+		margin-left: 50%;
+		left: -75px;
+	}
+
+	#u2201-bw
+	{
+		min-height: 124px;
 	}
 
 	#u601-4-bw
