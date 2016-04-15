@@ -1,11 +1,16 @@
-#u1001,#u1659
+#u1592
 {
-	background-color: transparent;
-}
-
-#u1592,#u1398,#u998
-{
+	-pie-box-shadow: 0px 2px 8px #7F7F7F;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 	background-color: #2D2D2D;
 }
+
+#u2201
+{
+	-pie-box-shadow: 0px -2px 8px #7F7F7F;
+	box-shadow: 0px -2px 8px rgba(0,0,0,0.5);
+	background-color: #2D2D2D;
+}
+
 
 
