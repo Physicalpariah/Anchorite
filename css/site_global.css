@@ -19,6 +19,12 @@ body,div,dl,dt,dd,ul,ol,li,nav,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,i
 	background-repeat: no-repeat;
 }
 
+wrapper
+{
+    height: 100%;
+    width: 100%;
+}
+
 .transition
 {
 	-webkit-transition-property: background-image,background-position,background-color,border-color,border-radius,color,font-size,font-style,font-weight,letter-spacing,line-height,text-align,box-shadow,text-shadow,opacity;
