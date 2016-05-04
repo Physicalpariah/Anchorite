@@ -1,15 +1,15 @@
 #u1592
 {
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 	-pie-box-shadow: 0px 2px 8px #7F7F7F;
 	background-color: #000000;
-	box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 }
 
 #u2201
 {
+	box-shadow: 0px -2px 8px rgba(0,0,0,0.5);
 	-pie-box-shadow: 0px -2px 8px #7F7F7F;
 	background-color: #000000;
-	box-shadow: 0px -2px 8px rgba(0,0,0,0.5);
 }
 
 

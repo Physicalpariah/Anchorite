@@ -52,6 +52,12 @@
 		left: 7.45%;
 	}
 
+	#u4865_img
+	{
+		padding-right: 3px;
+		width: 99.44%;
+	}
+
 	#u4604
 	{
 		z-index: 26;
@@ -59,6 +65,12 @@
 		margin-top: 1px;
 		width: 27.61%;
 		left: 36.1%;
+	}
+
+	#u4604_img
+	{
+		padding-right: 3px;
+		width: 99.44%;
 	}
 
 	#u4879
@@ -100,7 +112,6 @@
 
 	#u4316
 	{
-		background-color: transparent;
 		margin-right: -10000px;
 		width: 27.71%;
 		left: 7.24%;
@@ -126,7 +137,7 @@
 		left: 64.8%;
 	}
 
-	#page_position_content,#pu1592,#u1592_align_to_page,#u4865_img,#u4604_img,#u4879_img,#pu4316,#u4316_img,#u4342_img,#u4355_img,#pu2201
+	#page_position_content,#pu1592,#u1592_align_to_page,#u4879_img,#pu4316,#u4316_img,#u4342_img,#u4355_img,#pu2201
 	{
 		width: 100%;
 	}
