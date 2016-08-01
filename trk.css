@@ -1,12 +1,11 @@
-﻿
-html {
+﻿html {
 background-color: #282B34;
 }
 
 	body {
 	margin-left: auto;
 	margin-right: auto;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	font-size: medium;
 	color: #FFFFFF;
 	}
@@ -15,14 +14,19 @@ background-color: #282B34;
 padding: 60px 10px 60px 10px;
 font-size: 18px;
 text-align: center;
-width: 80%;
+width: 40%;
 min-width: 700px;
 margin: auto;
 }
 
-h2 {
+ h2 {
+display: none;
+}
+
+header h2 {
+display: inline;	
 text-align: center;
-font-size: 150%;
+font-size: 120%;
 font-weight: bold;
 }
 
@@ -66,6 +70,15 @@ margin: auto;
 /*align="middle";*/
 }
 
+.vidframe iframe {
+width: 800px; 
+height: 500px;	
+}
+
+.mobileimage {
+display: none;	
+}
+
 footer {
 width: 100%;
 background-color: #000000;
@@ -74,15 +87,8 @@ position: relative;
 bottom: 0px;
 font-size: small;
 padding: 0px;
-/*box-shadow: 5px 2px 7px 6px #000000;*/
 display: inline-block;
 text-align: center;
-}
-.footer {
-color: #FFFFFF;
-margin: 0px;
-padding: 5px;
-font-size: large;
 margin-bottom: -10px;
 }
 
@@ -99,11 +105,12 @@ margin: auto
 .signtext {
 position: relative;
 left: 5px;
-top: 40px;
+top: 30px;
 text-align: center;
 font-weight: bold;
-font-size: 30px;
+font-size: 25px;
 text-decoration: none;
+font-family: Raleway, Arial, sans-serif;
 }
 
 a:link {
@@ -129,6 +136,10 @@ margin:auto;
 margin-bottom: 50px;
 max-width: 800px;
 position: relative;
+}
+
+.mobileimage {
+display: none;	
 }
 
 .w3-btn-floating {
@@ -170,5 +181,781 @@ color: #FFC300;
 .contact a:hover {
 color: #FFFFFF;
 }
+
+.mobilecontact {
+display: none;	
+}
+
+
+
+					/** Mobile Device media query **/
+					
+					
+					
+	@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (orientation: portrait) { 
+header img {
+width: 100vw;
+}
+
+ header h2 {
+display: none;
+}
+
+
+ h2 {
+display: inline;
+text-align: center;
+padding-top: 20px;
+font-size: 45px;
+}
+
+.description {
+padding: 80px 10px 80px 10px;
+font-size: 30px;
+text-align: center;
+width: 65%;
+}
+
+.sign {
+position: relative;
+background-image: url(images/form.png);
+background-size: cover;
+width: 60%;
+height: 200px;
+margin: auto;
+top: -50px;
+padding-bottom: 60px;
+}
+
+.signtext {	
+font-size: 75px;
+top: 40px;
+font-weight: bold;
+font-family: Raleway, Arial, sans-serif;
+}
+
+.contact {
+font-size: 50px;
+display: block;
+position: relative;
+text-align: center;
+right: 30px;
+bottom: 5px;
+list-style-type: none;
+}
+
+footer {
+width: 100%;
+background-color: #000000;
+left: 0px;
+position: relative;
+bottom: 0px;
+font-size: small;
+padding: 0px;
+text-align: center;
+margin-bottom: -10px;
+}
+
+
+
+.vidframe {
+width: 100vw;
+margin-bottom: -10px;
+}
+
+.vidframe iframe {
+width: 100vw; 
+height: 550px;	
+margin-bottom: -10px;
+}
+
+
+
+.w3-content {
+display: none;
+}
+
+
+.mobileimage {
+display: block;	
+width: 100vw;
+position: relative;
+}
+
+.mobileimage img {
+max-width: 50vw;
+float: left;
+}
+
+.ul {
+list-style: none;
+padding: 0 0 10px 10px;
+right: 0px;
+position: relative;
+}
+
+.contact {
+display: none;	
+}
+
+.mobilecontact {
+font-size: 120px;
+display: inline;
+position: absolute;
+text-align: center;
+top:0px;
+}
+
+.mobilecontact a:link {
+color: #FFC300;
+text-decoration: none;
+}
+
+.mobilecontact a:visited {
+color: #FFC300;
+}
+
+.mobilecontact a:active {
+color: #FFC300;
+}
+
+.mobilecontact a:hover {
+color: #FFFFFF;
+}
+
+.twit {
+position: absolute;
+left: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+.mail {
+position: absolute;	
+right: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+	#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+	#cboxWrapper {max-width:none;}
+	#cboxOverlay{position:fixed; width:100%; height:100%;}
+	#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+	#cboxContent{position:relative;}
+	#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+	#cboxTitle{margin:0;}
+	#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+	#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+	.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+	.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+	#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+	#cboxOverlay{background-color:darkgrey;}
+	#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+    .cboxIframe{background:#fff;}
+    #cboxError{padding:50px; border:1px solid #ccc;}
+    #cboxLoadedContent{margin-bottom:28px;}
+    #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+    #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+    #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+    #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+    #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+    #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+    #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxPrevious:hover{background-position:-75px -25px;}
+    #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxNext:hover{background-position:-50px -25px;}
+    #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxClose:hover{background-position:-25px -25px;}
+
+
+
+	@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 667px) 
+  and (orientation: landscape) { 
+header img {
+width: 100vw;
+}
+
+ header h2 {
+display: none;
+}
+
+
+ h2 {
+display: inline;
+text-align: center;
+padding-top: 20px;
+font-size: 45px;
+}
+
+.description {
+padding: 80px 10px 80px 10px;
+font-size: 30px;
+text-align: center;
+width: 65%;
+}
+
+.sign {
+position: relative;
+background-image: url(images/form.png);
+background-size: cover;
+width: 60%;
+height: 200px;
+margin: auto;
+top: -50px;
+padding-bottom: 60px;
+}
+
+.signtext {	
+font-size: 75px;
+top: 40px;
+font-weight: bold;
+font-family: Raleway, Arial, sans-serif;
+}
+
+.contact {
+font-size: 50px;
+display: block;
+position: relative;
+text-align: center;
+right: 30px;
+bottom: 5px;
+list-style-type: none;
+}
+
+footer {
+width: 100%;
+background-color: #000000;
+left: 0px;
+position: relative;
+bottom: 0px;
+font-size: small;
+padding: 0px;
+display: inline-block;
+text-align: center;
+margin-bottom: -10px;
+}
+
+
+
+.vidframe {
+width: 100vw;
+margin-bottom: -10px;
+}
+
+.vidframe iframe {
+width: 100vw; 
+height: 550px;	
+margin-bottom: -10px;
+}
+
+
+
+.w3-content {
+display: none;
+}
+
+
+.mobileimage {
+display: inline;	
+width: 100vw;
+position: relative;
+}
+
+.mobileimage img {
+max-width: 50vw;
+float: left;
+}
+
+.ul {
+list-style: none;
+padding: 0 0 10px 10px;
+right: 0px;
+position: relative;
+}
+
+.contact {
+display: none;	
+}
+
+.mobilecontact {
+font-size: 120px;
+display: inline;
+position: absolute;
+text-align: right;
+top:0px;
+}
+
+.mobilecontact a:link {
+color: #FFC300;
+text-decoration: none;
+}
+
+.mobilecontact a:visited {
+color: #FFC300;
+}
+
+.mobilecontact a:active {
+color: #FFC300;
+}
+
+.mobilecontact a:hover {
+color: #FFFFFF;
+}
+
+.twit {
+position: absolute;
+left: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+.mail {
+position: absolute;	
+right: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+	#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+	#cboxWrapper {max-width:none;}
+	#cboxOverlay{position:fixed; width:100%; height:100%;}
+	#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+	#cboxContent{position:relative;}
+	#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+	#cboxTitle{margin:0;}
+	#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+	#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+	.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+	.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+	#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+	#cboxOverlay{background-color:darkgrey;}
+	#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+    .cboxIframe{background:#fff;}
+    #cboxError{padding:50px; border:1px solid #ccc;}
+    #cboxLoadedContent{margin-bottom:28px;}
+    #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+    #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+    #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+    #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+    #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+    #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+    #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxPrevious:hover{background-position:-75px -25px;}
+    #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxNext:hover{background-position:-50px -25px;}
+    #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxClose:hover{background-position:-25px -25px;}
+
+ /* large phones */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 410px) 
+  and (max-device-width: 800px) 
+  and (orientation: portrait) { 
+header img {
+header img {
+width: 100vw;
+}
+
+ header h2 {
+display: none;
+}
+
+
+ h2 {
+display: inline;
+text-align: center;
+padding-top: 20px;
+font-size: 45px;
+}
+
+.description {
+padding: 80px 10px 80px 10px;
+font-size: 30px;
+text-align: center;
+width: 65%;
+}
+
+.sign {
+position: relative;
+background-image: url(images/form.png);
+background-size: cover;
+width: 60%;
+height: 200px;
+margin: auto;
+top: -50px;
+padding-bottom: 60px;
+}
+
+.signtext {	
+font-size: 75px;
+top: 40px;
+font-weight: bold;
+font-family: Raleway, Arial, sans-serif;
+}
+
+.contact {
+font-size: 50px;
+display: block;
+position: relative;
+text-align: center;
+right: 30px;
+bottom: 5px;
+list-style-type: none;
+}
+
+footer {
+width: 100%;
+background-color: #000000;
+left: 0px;
+position: relative;
+bottom: 0px;
+font-size: small;
+padding: 0px;
+display: inline-block;
+text-align: center;
+margin-bottom: -10px;
+}
+
+
+
+.vidframe {
+width: 100vw;
+margin-bottom: -10px;
+}
+
+.vidframe iframe {
+width: 100vw; 
+height: 550px;	
+margin-bottom: -10px;
+}
+
+
+
+.w3-content {
+display: none;
+}
+
+
+.mobileimage {
+display: inline;	
+width: 100vw;
+position: relative;
+}
+
+.mobileimage img {
+max-width: 50vw;
+float: left;
+position: relative;
+}
+
+.ul {
+list-style: none;
+padding: 0 0 10px 10px;
+right: 0px;
+position: relative;
+}
+
+.contact {
+display: none;	
+}
+
+.mobilecontact {
+font-size: 120px;
+display: inline;
+position: absolute;
+text-align: right;
+top:0px;
+}
+
+.mobilecontact a:link {
+color: #FFC300;
+text-decoration: none;
+}
+
+.mobilecontact a:visited {
+color: #FFC300;
+}
+
+.mobilecontact a:active {
+color: #FFC300;
+}
+
+.mobilecontact a:hover {
+color: #FFFFFF;
+}
+
+.twit {
+position: absolute;
+left: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+.mail {
+position: absolute;	
+right: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+	#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+	#cboxWrapper {max-width:none;}
+	#cboxOverlay{position:fixed; width:100%; height:100%;}
+	#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+	#cboxContent{position:relative;}
+	#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+	#cboxTitle{margin:0;}
+	#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+	#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+	.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+	.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+	#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+	#cboxOverlay{background-color:darkgrey;}
+	#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+    .cboxIframe{background:#fff;}
+    #cboxError{padding:50px; border:1px solid #ccc;}
+    #cboxLoadedContent{margin-bottom:28px;}
+    #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+    #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+    #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+    #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+    #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+    #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+    #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxPrevious:hover{background-position:-75px -25px;}
+    #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxNext:hover{background-position:-50px -25px;}
+    #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxClose:hover{background-position:-25px -25px;}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 410px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+header img {
+width: 100vw;
+}
+
+ header h2 {
+display: none;
+}
+
+
+ h2 {
+display: inline;
+text-align: center;
+padding-top: 20px;
+font-size: 45px;
+}
+
+.description {
+padding: 80px 10px 80px 10px;
+font-size: 30px;
+text-align: center;
+width: 65%;
+}
+
+.sign {
+position: relative;
+background-image: url(images/form.png);
+background-size: cover;
+width: 60%;
+height: 200px;
+margin: auto;
+top: -50px;
+padding-bottom: 60px;
+}
+
+.signtext {	
+font-size: 75px;
+top: 40px;
+font-weight: bold;
+font-family: Raleway, Arial, sans-serif;
+}
+
+.contact {
+font-size: 50px;
+display: block;
+position: relative;
+text-align: center;
+right: 30px;
+bottom: 5px;
+list-style-type: none;
+}
+
+footer {
+width: 100%;
+background-color: #000000;
+left: 0px;
+position: relative;
+bottom: 0px;
+font-size: small;
+padding: 0px;
+display: inline-block;
+text-align: center;
+margin-bottom: -10px;
+}
+
+
+
+.vidframe {
+width: 100vw;
+margin-bottom: -10px;
+}
+
+.vidframe iframe {
+width: 100vw; 
+height: 550px;	
+margin-bottom: -10px;
+}
+
+
+
+.w3-content {
+display: none;
+}
+
+
+.mobileimage {
+display: inline;	
+width: 100vw;
+position: relative;
+}
+
+.mobileimage img {
+max-width: 50vw;
+float: left;
+}
+
+.ul {
+list-style: none;
+padding: 0 0 10px 10px;
+right: 0px;
+position: relative;
+}
+
+.contact {
+display: none;	
+}
+
+.mobilecontact {
+font-size: 120px;
+display: inline;
+position: absolute;
+text-align: right;
+top:0px;
+}
+
+.mobilecontact a:link {
+color: #FFC300;
+text-decoration: none;
+}
+
+.mobilecontact a:visited {
+color: #FFC300;
+}
+
+.mobilecontact a:active {
+color: #FFC300;
+}
+
+.mobilecontact a:hover {
+color: #FFFFFF;
+}
+
+.twit {
+position: absolute;
+left: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+.mail {
+position: absolute;	
+right: 350px;
+top: 150px;
+line-height: 30px;
+}
+
+	#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+	#cboxWrapper {max-width:none;}
+	#cboxOverlay{position:fixed; width:100%; height:100%;}
+	#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+	#cboxContent{position:relative;}
+	#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+	#cboxTitle{margin:0;}
+	#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+	#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+	.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+	.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+	#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+	#cboxOverlay{background-color:darkgrey;}
+	#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+    .cboxIframe{background:#fff;}
+    #cboxError{padding:50px; border:1px solid #ccc;}
+    #cboxLoadedContent{margin-bottom:28px;}
+    #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+    #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+    #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+    #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+    #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+    #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+    #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+    #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxPrevious:hover{background-position:-75px -25px;}
+    #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxNext:hover{background-position:-50px -25px;}
+    #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+    #cboxClose:hover{background-position:-25px -25px;}
+
+
 
 

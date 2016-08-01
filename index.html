@@ -1,27 +1,43 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<title>Unstoppable</title>
 	<link type="text/css" rel="stylesheet" href="trk.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.colorbox.js"></script>
+	<script>
+            jQuery(document).ready(function () {
+                jQuery('a.gallery').colorbox({ maxHeight:"90%" , scrolling:false , maxWidth:"100%" , rel:'group1' });
+            });
+        </script>	
 </head>
 
 <body>
 	<header>
 		<img src="images/title.png">
-		<hr> AVAILABLE NOW ON iOS
+		<hr> 
+		<h2>AVAILABLE NOW ON iOS</h2>
 	</header>
 	<div class="vidframe">
 		<!-- ADD VIDEO CODE FROM URL BELOW, VIDEO CODE INSTERED AS SHOWN (/embed/*******?autoplay=1) -->
-		<iframe width="800" height="500" frameBorder="0" src="https://www.youtube.com/embed/ZO6BTjubO6Q?autoplay=1" allowfullscreen>
+		<iframe frameBorder="0" src="https://www.youtube.com/embed/ZO6BTjubO6Q?autoplay=1" allowfullscreen>
 		</iframe>
 	</div>
-	<p class="description">
+	<div class="description">
+	
+	<h2>AVAILABLE NOW ON iOS</h2>
+	<p>
 		Unstoppable is a post-apocalyptic truck driving game where your goal is absolute mayhem. Survive long enough to see to the
 		other side of a snowy gauntlet filled with marauders hell-bent on wiping you out. At your disposal are machine guns, mounted
 		spikes, circular saws, flamethrowers, miniguns and minions to turn your rig into an unstoppable death-machine!
 	</p>
+	</div>
+	
 	<hr>
 	<div class="w3-content">
 		<img class="mySlides" src="images/s01.jpg" style="width:100%">
@@ -50,23 +66,42 @@
 			x[slideIndex-1].style.display = "block";
 			}
 		</script>
+		<div class="mobileimage">
+		<a class="gallery" href="images/s02.jpg"><img src="images/s02.jpg" style="width:100%"></a>
+		<a class="gallery" href="images/s03.jpg"><img src="images/s03.jpg" style="width:100%"></a>
+		<a class="gallery" href="images/s04.jpg"><img src="images/s04.jpg" style="width:100%"></a>
+		<a class="gallery" href="images/s05.jpg"><img src="images/s05.jpg" style="width:100%"></a>
+	</div>
+
 	<footer>
+	
 		<div class="sign">
 			<!-- ADD LINK TO IOS APPSTORE BELOW -->
 			<a href="https://appsto.re/au/waZXab.i">
-				<p class="signtext">GET IT NOW!</p>
+				<p class="signtext">GET IT <br> NOW!</p>
 			</a>
 
-		</div>
+	</div>
 		<ul class="contact">
 				<a href="mailto:Contact@FlatEarthGames.com.au?Subject=Unstoppable" target="_top">
-					<li>Send me an email</li>
+					<li>Send me an email &#9993</li>
 				</a>
 				<a href="https://twitter.com/physicalpariah">
-					<li>Follow me on Twitter</li>
+					<li>Follow me on Twitter &#64</li>
 				</a>
 			</ul>
+			
+		<div class="mobilecontact">
+				<a class="mail" href="mailto:Contact@FlatEarthGames.com.au?Subject=Unstoppable" target="_top">
+					<i class="fa fa-envelope"></i>
+				</a>
+				<a class="twit" href="https://twitter.com/physicalpariah">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</div>		
+			
 	</footer>
 </body>
 
 </html>
+	
