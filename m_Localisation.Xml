@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<LocalisationItems>
-		<Item title="TestScene_TestField">
-			<English>Hello</English>
-			<English></English>
-			<French></French>
-			<German></German>
-			<Italian></Italian>
-			<Spanish></Spanish>
+		<Item title="TestScene_TestTitle">
+			<English>Localisation Title:</English>
+			<French>Localisation Titre:</French>
+			<German>Lokalisierung Titel:</German>
+			<Italian>Localizzazione Titolo:</Italian>
+			<Spanish>Localización Título:</Spanish>
+		</Item>
+		<Item title="TestScene_TestBody">
+			<English>This is a sample localisation set. Use the dropdown to the right to change the available languages.</English>
+			<French>Il s'agit d'un exemple de localisation. Utilisez le menu déroulant vers la droite pour modifier les langues disponibles.</French>
+			<German>Dies ist ein Beispiel-Lokalisierungssatz. Verwenden Sie das Dropdown-Menü, um die verfügbaren Sprachen zu ändern.</German>
+			<Italian>Si tratta di un set di localizzazione di esempio. Utilizza il menu a discesa a destra per modificare le lingue disponibili.</Italian>
+			<Spanish>Este es un conjunto de localización de muestras. Utilice la lista desplegable a la derecha para cambiar los idiomas disponibles.</Spanish>
 		</Item>
 	</LocalisationItems>
 </root>
