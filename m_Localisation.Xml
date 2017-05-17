@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<LocalisationItems>
+		<Item title="TestScene_TestField">
+			<English>Hello</English>
+			<English></English>
+			<French></French>
+			<German></German>
+			<Italian></Italian>
+			<Spanish></Spanish>
+		</Item>
+	</LocalisationItems>
+</root>
