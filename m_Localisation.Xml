@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
+<root Version="0">
 	<LocalisationItems>
 		<Item title="TestScene_TestTitle">
 			<English>Localisation Title:</English>
